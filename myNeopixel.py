@@ -2,7 +2,6 @@ from time import sleep
 import board
 import neopixel
 
-
 dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
 dot.brightness = 0.1 
 
