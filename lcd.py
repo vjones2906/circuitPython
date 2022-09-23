@@ -2,9 +2,9 @@ import board
 import time
 from lcd.lcd import LCD
 from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
-from digitalio import DigitalInOut, Direction, Pull
+from digitalio import DigitalInOut, Direction, Pull               #importing all required libraries 
 
-from lcd.lcd import CursorMode
+from lcd.lcd import CursorMode                                    #lcd cursor is 1 square, not a line
 
 # get and i2c object
 i2c = board.I2C()
@@ -17,35 +17,47 @@ button_a.direction = Direction.INPUT
 button_a.pull = Pull.UP
 
 slide_a=DigitalInOut(board.D2)
-slide_a.direction=Direction.INPUT
+slide_a.direction=Direction.INPUT                                 #setting up slide switch and button
+
+#lcd tricks!
 
 #lcd.clear()
 #lcd.set_cursor_pos(1, 0)
-# Make the cursor visible as a line.
+
+# Make the cursor visible as a line:
 #lcd.set_cursor_mode(CursorMode.LINE)
 
-print(slide_a.value)
-
-count=0
-prev_state = button_a.value
+count=0                                                           #setting up count
+prev_state = button_a.value                                       #setting up button on push
 
 while True:
     cur_state = button_a.value
-    if cur_state != prev_state:
-        if not cur_state:
-            if slide_a.value == False:
-                count = count + 1
+    if cur_state != prev_state:                                   #button on push loop
+        if not cur_state:                   
+            if slide_a.value == True:                             #
+                count += 1
+                if count==0:
+                    lcd.set_cursor_pos(0,9)
+                    lcd.print(' ')
             else:
-                lcd.set_cursor_pos(1,12)
-                lcd.print(' ')
-                count = count - 1
+                count -= 1
+                if count==9:
+                    lcd.set_cursor_pos(0,9)
+                    lcd.print(' ')
             print(count)
-            time.sleep(.3)
-        else:
-            lcd.set_cursor_pos(0,0) 
-            lcd.print('button: ')
-            lcd.print(str(count))
-            lcd.set_cursor_pos(1,0) 
-            lcd.print('switch: ')
-            lcd.print(str(slide_a.value))
+            time.sleep(.1)
         prev_state = cur_state
+    else:
+        lcd.set_cursor_pos(0,0) 
+        lcd.print('button: ')
+        lcd.print(str(count))
+        lcd.set_cursor_pos(1,0) 
+        lcd.print('switch: ')
+        if slide_a.value == False:
+           lcd.print('-')
+        if slide_a.value == True:
+            lcd.print('+')
+
+
+           
+
