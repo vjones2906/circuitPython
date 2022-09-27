@@ -4,6 +4,7 @@ This repository will actually serve as a aid to help you get started with your o
 * [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
+* [CircuitPython_Servo](#CircuitPython_Ultrasonic)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
@@ -57,9 +58,25 @@ None needed
 During this assignment, I had to figure out where to import the libraries, where to get the libraries, and which libraries were needed. You should download the UF2 file, then copy paste the correct .mpy into the lib folder of the circuitPython directory. I also had to remember how to do a counter, but it is much easier than I remembered.  
 
 
-
-
 ## CircuitPython_Servo
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+
+### Evidence
+gif with credit
+### Wiring
+Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
+Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+### Reflection
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+
+
+## CircuitPython_Ultrasonic
 
 ### Description & Code
 In the distances meausered by an ultrasonic senseor between 5 and 35 cm, the neopixel will be mapped to fade from red to green.
@@ -120,20 +137,77 @@ The hardest part of this assignment was figuring out how to map the values from 
 ## CircuitPython_LCD
 
 ### Description & Code
+When the slideswitch is true, every time the button is pressed the counter will go up by 1. When the slideswitch is false, the same thing will happen exept the values will go down. The LCD will print the counter and whether the slideswitch is positive or negative. 
 
 ```python
-Code goes here
+import board
+import time
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+from digitalio import DigitalInOut, Direction, Pull               #importing all required libraries 
 
+from lcd.lcd import CursorMode                                    #lcd cursor is 1 square, not a line
+
+# get and i2c object
+i2c = board.I2C()
+
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+
+button_a = DigitalInOut(board.D3)
+button_a.direction = Direction.INPUT
+button_a.pull = Pull.UP
+
+slide_a=DigitalInOut(board.D2)
+slide_a.direction=Direction.INPUT                                 #setting up slide switch and button
+
+#lcd tricks!
+
+#lcd.clear()
+#lcd.set_cursor_pos(1, 0)
+
+# Make the cursor visible as a line:
+#lcd.set_cursor_mode(CursorMode.LINE)
+
+count=0                                                           #setting up count
+prev_state = button_a.value                                       #setting up button on push
+
+while True:
+    cur_state = button_a.value
+    if cur_state != prev_state:                                   #button on push loop
+        if not cur_state:                   
+            if slide_a.value == True:                             #if the slide value is true, increase number
+                count += 1
+                if count==0:
+                    lcd.set_cursor_pos(0,9)
+                    lcd.print(' ')
+            else:                                                 #if the slide value is false, decrease number
+                count -= 1
+                if count==9:
+                    lcd.set_cursor_pos(0,9)
+                    lcd.print(' ')
+            print(count)
+            time.sleep(.1)
+        prev_state = cur_state
+    else:
+        lcd.set_cursor_pos(0,0)                                   #telling LCD what to print
+        lcd.print('button: ')
+        lcd.print(str(count))
+        lcd.set_cursor_pos(1,0) 
+        lcd.print('switch: ')
+        if slide_a.value == False:
+           lcd.print('-')
+        if slide_a.value == True:
+            lcd.print('+')
 ```
 
 ### Evidence
-
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+![lcd_in_action](https://media.giphy.com/media/u54T48FAGXANMkITiG/giphy.gif)
 
 ### Wiring
-
+![circuit_diagram_lcd](docs/lcd%20circuit%20diagram.png)
 ### Reflection
-
+I learnd a lot during this project. The hardest part was getting all the libraries and setting up all the particular circuitPython LCD requirements for it to work. I used the same settup for the switch as I did fot the button, which I had to figure out by myself because there is nothing on the internet for circuitPython slideswitches. I also had to figure out how to use button on push so it didn't count more than 1 time per push.  
 
 
 
