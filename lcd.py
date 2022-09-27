@@ -34,12 +34,12 @@ while True:
     cur_state = button_a.value
     if cur_state != prev_state:                                   #button on push loop
         if not cur_state:                   
-            if slide_a.value == True:                             #
+            if slide_a.value == True:                             #if the slide value is true, increase number
                 count += 1
                 if count==0:
                     lcd.set_cursor_pos(0,9)
                     lcd.print(' ')
-            else:
+            else:                                                 #if the slide value is false, decrease number
                 count -= 1
                 if count==9:
                     lcd.set_cursor_pos(0,9)
@@ -48,7 +48,7 @@ while True:
             time.sleep(.1)
         prev_state = cur_state
     else:
-        lcd.set_cursor_pos(0,0) 
+        lcd.set_cursor_pos(0,0)                                   #telling the LCD what to print
         lcd.print('button: ')
         lcd.print(str(count))
         lcd.set_cursor_pos(1,0) 
