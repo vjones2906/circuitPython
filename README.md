@@ -111,7 +111,7 @@ while True:
 ![servo_fade](https://media.giphy.com/media/yXlLEO7xj1HNUstS9G/giphy.gif)
 
 ### Wiring
-![tinkercad.com](https://www.tinkercad.com/things/6xWfe0dYyqb-glorious-fulffy/editel?tenant=circuits)
+![ciruit diagram ultrasonic](docs/ulrasonic%20circuit.png)
 ### Reflection
 The hardest part of this assignment was figuring out how to map the values from cm of distance into 0-255 LED values. It took me a while to figure out how to do the mapping, but once i did, it all came fast from there. The format for ultrasonic sensors in circuitPython was copy pasted from the circuitPython webpage.
 
