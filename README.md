@@ -46,7 +46,7 @@ while True:
 ### Evidence
 
 
-![neopixel_rainbow]](https://media.giphy.com/media/i878kZAQd2ijZAM1FF/giphy.gif)
+![neopixel_rainbow](https://media.giphy.com/media/i878kZAQd2ijZAM1FF/giphy.gif)
 
 
 
