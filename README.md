@@ -203,7 +203,6 @@ while True:
 
 ### Evidence
 ![lcd_in_action](https://media.giphy.com/media/u54T48FAGXANMkITiG/giphy.gif)
-
 ### Wiring
 ![circuit_diagram_lcd](docs/lcd%20circuit%20diagram.png)
 ### Reflection
