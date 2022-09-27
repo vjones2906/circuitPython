@@ -48,7 +48,7 @@ while True:
             time.sleep(.1)
         prev_state = cur_state
     else:
-        lcd.set_cursor_pos(0,0)                                   #telling the LCD what to print
+        lcd.set_cursor_pos(0,0)                                   #telling LCD what to print
         lcd.print('button: ')
         lcd.print(str(count))
         lcd.set_cursor_pos(1,0) 
