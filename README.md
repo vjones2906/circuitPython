@@ -46,7 +46,7 @@ while True:
 ### Evidence
 
 
-![spinningMetro_Optimized](https://giphy.com/gifs/i878kZAQd2ijZAM1FF/fullscreen)
+![spinningMetro_Optimized](https://media.giphy.com/media/i878kZAQd2ijZAM1FF/giphy.gif)
 
 
 
