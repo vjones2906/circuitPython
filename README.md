@@ -239,7 +239,7 @@ The goal of this assignment was to use design intent to create the parts so that
 ![Question 3](https://user-images.githubusercontent.com/112962101/197566238-da6182d3-b9af-4e5e-90a2-0195e896c2cd.png)
 ![Question 4](https://user-images.githubusercontent.com/112962101/197566291-0f656ed5-cf45-4a5c-b412-bbc959fef8f6.png)
 ### Reflection
-This project was hardest in the first 2 questions. In the first one you simply had to create everything, and in the se
+This project was hardest in the first 2 questions. In the first one you simply had to create everything, and in the second one you saw how poorly you designed most of your sketches and extrudes. The 3rd question had a couple things go wrong, but were easy to fix and the fourth went perfectly. Doing this project really showed me how important design intent is when creating something that is meant to be changed. The more variables or "moving parts" the more precise and well planned all your work has to be. I used cross sections a lot and got some help from Dylan and Jinho.
 
 
 ## NextAssignment
