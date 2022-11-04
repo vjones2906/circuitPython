@@ -263,7 +263,8 @@ while True:
 ```
 
 ### Evidence
-gif with credit
+![motor](https://user-images.githubusercontent.com/112962101/200012655-9832f981-b3ca-47c1-a22f-0be37b9d22aa.mp4)
+
 ### Wiring
 Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
 Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
