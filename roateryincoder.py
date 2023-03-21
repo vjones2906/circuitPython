@@ -1,7 +1,7 @@
 import board
 from lcd.lcd import LCD
 from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
-from digitalio import DigitalInOut, Direction, Pull                
+from digitalio import DigitalInOut, Direction, Pull               
 from lcd.lcd import CursorMode    
 import neopixel  
 import rotaryio                                                   #importing all required libraries
