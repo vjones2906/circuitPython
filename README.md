@@ -271,6 +271,24 @@ Then post an image here.   [here's a quick tutorial for all markdown code, like 
 What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
 
+## Bowling Ball Arm 
+
+### Description & Code
+The purpose of this assignment was to create a specialized robot arm. The arm we created was a gravity-run mini bowling ball arm. The box was on a turn table, and then the arm itself was on an ball bearing axel. There was a servo with an arm above it that would spin and lock in the arm and then keep spinning to raise it. Then when it reached a certain angle the crank arm would slide out. After it would slide out then the arm would be free to swing down on the axel. Then a button would be pressed and the clamps would release the ball and it would fly forward hitting the targets 
+```python
+Code goes here
+
+```
+
+### Evidence
+gif with credit
+### Wiring
+Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
+Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+### Reflection
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+
+
 ## NextAssignment
 
 ### Description & Code
