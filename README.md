@@ -274,10 +274,72 @@ We already did this assignment last year and I did multiple projects which inclu
 ## Bowling Ball Arm 
 
 ### Description & Code
-The purpose of this assignment was to create a specialized robot arm. The arm we created was a gravity-run mini bowling ball arm. The box was on a turn table, and then the arm itself was on an ball bearing axel. There was a servo with an arm above it that would spin and lock in the arm and then keep spinning to raise it. Then when it reached a certain angle the crank arm would slide out. After it would slide out then the arm would be free to swing down on the axel. Then a button would be pressed and the clamps would release the ball and it would fly forward hitting the targets 
+The purpose of this assignment was to create a specialized robot arm. The arm we created was a gravity-run mini bowling ball arm. The box was on a turn table, and then the arm itself was on an ball bearing axel. There was a servo with an arm above it that would spin and lock in the arm and then keep spinning to raise it. Then when it reached a certain angle the crank arm would slide out. After it would slide out then the arm would be free to swing down on the axel. Then a button would be pressed and the clamps would release the ball and it would fly forward hitting the targets. In total there would be 4 buttons and a potentiometer. The buttons would control the servo to lift up the arm and the release of the claw. The potentiometer would control the heading of the turntable. 
 ```python
-Code goes here
+import time
+import board
+import pwmio
+import simpleio 
+from adafruit_motor import servo
+from analogio import AnalogIn 
+from digitalio import DigitalInOut, Direction, Pull
 
+button_a = DigitalInOut(board.D1)
+button_a.direction = Direction.INPUT
+button_a.pull = Pull.DOWN
+
+button_b = DigitalInOut(board.D2)
+button_b.direction = Direction.INPUT
+button_b.pull = Pull.DOWN
+
+button_c = DigitalInOut(board.D3)
+button_c.direction = Direction.INPUT
+button_c.pull = Pull.DOWN
+
+button_d = DigitalInOut(board.D4)
+button_d.direction = Direction.INPUT
+button_d.pull = Pull.DOWN
+
+pot = AnalogIn(board.A1)   
+
+# create a PWMOut object on Pin A2.
+pwm_servo = pwmio.PWMOut(board.D9, duty_cycle=2 ** 15, frequency=50)
+pwm_servo1 = pwmio.PWMOut(board.D10, duty_cycle=2 ** 15, frequency=50)
+pwm_servo2 = pwmio.PWMOut(board.D11, duty_cycle=2 ** 15, frequency=50)
+
+
+# Create a servo object, my_servo.
+my_servo = servo.ContinuousServo(pwm_servo, min_pulse=1000, max_pulse=2000)  # tune pulse for specific servo
+my_servo1 = servo.Servo(pwm_servo1)
+my_servo2 = servo.Servo(pwm_servo2)
+
+while True:
+    if button_a.value:
+        my_servo.throttle  = 1
+        print("servo counterclockwise")
+        time.sleep(0.1)
+    elif button_b.value:
+        my_servo.throttle = -.05
+        print("servo clockwise")
+        time.sleep(0.1)
+
+    elif button_c.value:
+        my_servo1.angle = 0
+        print("servo 1 counterclockwise")
+        time.sleep(0.1)
+    elif button_d.value:
+        my_servo1.angle = 180
+        print("servo 1 clockwise")
+        time.sleep(0.1)
+
+    else:
+        print((int(simpleio.map_range(pot.value,0,65535,0,180)) ))
+        newpot = int(simpleio.map_range(pot.value,0,65535,0,180))
+        my_servo2.angle = newpot
+
+        my_servo.throttle = 0
+        print("servo off")
+        time.sleep(0.1)
 ```
 
 ### Evidence
