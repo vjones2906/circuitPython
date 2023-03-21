@@ -263,12 +263,12 @@ while True:
 ```
 
 ### Evidence
-gif with credit
+![motor](https://user-images.githubusercontent.com/112962101/200012655-9832f981-b3ca-47c1-a22f-0be37b9d22aa.mp4)
+
 ### Wiring
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+![Screenshot 2022-11-09 105143](https://user-images.githubusercontent.com/112962101/200877158-1b3b997d-75a5-48f7-b834-9f53678898cd.png)
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+We already did this assignment last year and I did multiple projects which included motot control so it was easy to do again. I needed a little help with the code and then the hardest part was figuring out why the motor wouldn't work. It ended up being the order in which the analog pins were declared. The motor pin needs to come before the potentiometer pin. 
 
 
 ## Bowling Ball Arm 
