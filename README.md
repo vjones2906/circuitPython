@@ -410,7 +410,7 @@ while True:
         if not cur_state:
             dot.fill((0, 255, 0)) 
 
-    last_position = position                                        #resetting the encoder "value"
+    last_position = position                                        #resetting the encoder "value" 
 ```
 
 ### Evidence
