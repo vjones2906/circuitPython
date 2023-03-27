@@ -362,14 +362,14 @@ from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
 from digitalio import DigitalInOut, Direction, Pull               
 from lcd.lcd import CursorMode   
 import neopixel  
-import rotaryio                                                   #importing all required libraries
+import rotaryio                                                    #importing all required libraries
 
 button = DigitalInOut(board.D2)
 button.direction = Direction.INPUT
-button.pull = Pull.UP                                             #defining the button on the encoder
+button.pull = Pull.UP                                              #defining the button on the encoder
 
 dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
-dot.brightness = 0.1                                              #defining the neopixel
+dot.brightness = 0.1                                               #defining the neopixel
 
 i2c = board.I2C()
 lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16) #defining the LCD
