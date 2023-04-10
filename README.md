@@ -417,7 +417,7 @@ while True:
 ![rotary_encoder](https://media.giphy.com/media/g78CPxbHUdv7Wm6lpZ/giphy.gif)
 
 ### Wiring
-![encoderwiring](--------------------)
+![encoderwiring](--------------------) 
 
 ### Reflection
 The main challenge of this assingment was trying to do the C++ code in python. The whole assingment was meant for C++ so all the tips and all of the learning was not in python. I learned to use certain websites online to aid me in the learning, and I had to imporvise quite a few times. I learned about arrays and how an encoder actually works. One of the main problems I had with the code itself was which loop would go before the other. It took a lot of trying and a lot tweaking to find the exact right order. 
