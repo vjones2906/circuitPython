@@ -263,7 +263,7 @@ while True:
 ```
 
 ### Evidence
-![motor](https://user-images.githubusercontent.com/112962101/200012655-9832f981-b3ca-47c1-a22f-0be37b9d22aa.mp4)
+![motor](https://github.com/vjones2906/circuitPython/blob/master/docs/ezgif.com-crop.gif)
 
 ### Wiring
 ![motorcontrol](https://github.com/vjones2906/circuitPython/blob/master/docs/motorcontrol.png)
