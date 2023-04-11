@@ -1,10 +1,8 @@
 # CircuitPython
-This repository will actually serve as a aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.  If you want to draw inspiration from other classmates, feel free to check [this directory of all students!](https://github.com/chssigma/Class_Accounts).
 ## Table of Contents
 * [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
-* [CircuitPython_Servo](#CircuitPython_Servo)
-* [CircuitPython_Servo](#CircuitPython_Ultrasonic)
+* [CircuitPython_Ultrasonic](#CircuitPython_Ultrasonic)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [Pull_Coptor](#Pull_Copter)
 * [Swing_Arm](#Swing_Arm)
@@ -21,7 +19,6 @@ This repository will actually serve as a aid to help you get started with your o
 
 ### Description & Code
 Turns the neopixel on and cycles through the colors of the rainbow. 
-
 ```python
 from time import sleep
 import board
@@ -51,44 +48,19 @@ while True:
     print('done with loop', count)
 ```
 
-
 ### Evidence
-
-
 ![neopixel_rainbow](https://media.giphy.com/media/i878kZAQd2ijZAM1FF/giphy.gif)
-
-
-
 ### Wiring
 None needed
-
 ### Reflection
 During this assignment, I had to figure out where to import the libraries, where to get the libraries, and which libraries were needed. You should download the UF2 file, then copy paste the correct .mpy into the lib folder of the circuitPython directory. I also had to remember how to do a counter, but it is much easier than I remembered. 
 
-
-## CircuitPython_Servo
-
-### Description & Code
-
-```python
-Code goes here
-
-```
-
-### Evidence
-gif with credit
-### Wiring
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
-### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
 
 ## CircuitPython_Ultrasonic
 
 ### Description & Code
 In the distances meausered by an ultrasonic senseor between 5 and 35 cm, the neopixel will be mapped to fade from red to green.
-
 ```python
 import time
 import board
@@ -128,13 +100,10 @@ while True:
     except RuntimeError:                                 #if there is no value found, tell us
         print("Retrying!")
     time.sleep(0.1)                                      #debounce
-    
 ```
 
 ### Evidence
-
 ![servo_fade](https://media.giphy.com/media/yXlLEO7xj1HNUstS9G/giphy.gif)
-
 ### Wiring
 ![ciruit diagram ultrasonic](docs/ulrasonic%20circuit.png)
 ### Reflection
@@ -146,7 +115,6 @@ The hardest part of this assignment was figuring out how to map the values from 
 
 ### Description & Code
 When the slideswitch is true, every time the button is pressed the counter will go up by 1. When the slideswitch is false, the same thing will happen exept the values will go down. The LCD will print the counter and whether the slideswitch is positive or negative. 
-
 ```python
 import board
 import time
@@ -213,9 +181,10 @@ while True:
 ![lcd_in_action](https://media.giphy.com/media/u54T48FAGXANMkITiG/giphy.gif)
 ### Wiring
 ![circuit_diagram_lcd](docs/lcd%20circuit%20diagram.png)
-
 ### Reflection
 I learnd a lot during this project. The hardest part was getting all the libraries and setting up all the particular circuitPython LCD requirements for it to work. I used the same settup for the switch as I did fot the button, which I had to figure out by myself because there is nothing on the internet for circuitPython slideswitches. I also had to figure out how to use button on push so it didn't count more than 1 time per push.  
+
+
 
 ## Pull_Copter 
 
@@ -227,6 +196,7 @@ This goal of this assignment was to teach us how to collaborate in a single CAD 
 This project went longer than intended because I got sick and my partner, River, had to wait for me to finish. This was challenging to figure out what parts needed to be completed in branches and what parts needed to be collaberated on. It was also hard to figure out how to do some of the geometry, but overall was just a review of last year. 
 
 
+
 ## Swing_Arm
 
 ### Description 
@@ -235,6 +205,7 @@ This goal of this assignment was to use drawings, geometry, and variables to cre
 ![Swing Arm](https://user-images.githubusercontent.com/112962101/197563924-61553a7c-4b80-4dc1-924e-1fd85104f3ef.png)
 ### Reflection
 It was difficult getting started on this assignment beacuse I didn't know how to use onshape's geometry at first. There were a few parts of my sketch that I did the wrong way and then had to go back and fix. It taught me to sketch and dimension off of other sketches so if you change something, they all agree. It was also hard interpreting the drawings at first. I learned that cross-sections are very useful. 
+
 
 
 ## Multi-Part_Studio
@@ -248,6 +219,7 @@ The goal of this assignment was to use design intent to create the parts so that
 ![Question 4](https://user-images.githubusercontent.com/112962101/197566291-0f656ed5-cf45-4a5c-b412-bbc959fef8f6.png)
 ### Reflection
 This project was hardest in the first 2 questions. In the first one you simply had to create everything, and in the second one you saw how poorly you designed most of your sketches and extrudes. The 3rd question had a couple things go wrong, but were easy to fix and the fourth went perfectly. Doing this project really showed me how important design intent is when creating something that is meant to be changed. The more variables or "moving parts" the more precise and well planned all your work has to be. I used cross sections a lot and got some help from Dylan and Jinho.
+
 
 
 ## Motor_Control 
@@ -272,11 +244,11 @@ while True:
 
 ### Evidence
 ![motor](https://github.com/vjones2906/circuitPython/blob/master/docs/ezgif.com-crop.gif)
-
 ### Wiring
 ![motorcontrol](https://github.com/vjones2906/circuitPython/blob/master/docs/motorcontrol.png)
 ### Reflection
 We already did this assignment last year and I did multiple projects which included motot control so it was easy to do again. I needed a little help with the code and then the hardest part was figuring out why the motor wouldn't work. It ended up being the order in which the analog pins were declared. The motor pin needs to come before the potentiometer pin. 
+
 
 
 ## Bowling_Ball_Arm 
@@ -359,6 +331,7 @@ Then post an image here.   [here's a quick tutorial for all markdown code, like 
 What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
 
+
 ## Rotary_Encoder 
 
 ### Description & Code
@@ -423,12 +396,11 @@ while True:
 
 ### Evidence
 ![rotary_encoder](https://media.giphy.com/media/g78CPxbHUdv7Wm6lpZ/giphy.gif)
-
 ### Wiring
 ![encoderwiring](https://github.com/vjones2906/circuitPython/blob/master/docs/encoderwiring.png) 
-
 ### Reflection
 The main challenge of this assingment was trying to do the C++ code in python. The whole assingment was meant for C++ so all the tips and all of the learning was not in python. I learned to use certain websites online to aid me in the learning, and I had to imporvise quite a few times. I learned about arrays and how an encoder actually works. One of the main problems I had with the code itself was which loop would go before the other. It took a lot of trying and a lot tweaking to find the exact right order. 
+
 
 
 ## NextAssignment
