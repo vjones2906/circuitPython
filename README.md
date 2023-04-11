@@ -1,6 +1,5 @@
 # CircuitPython
 ## Table of Contents
-* [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Ultrasonic](#CircuitPython_Ultrasonic)
 * [CircuitPython_LCD](#CircuitPython_LCD)
@@ -50,8 +49,6 @@ while True:
 
 ### Evidence
 ![neopixel_rainbow](https://media.giphy.com/media/i878kZAQd2ijZAM1FF/giphy.gif)
-### Wiring
-None needed
 ### Reflection
 During this assignment, I had to figure out where to import the libraries, where to get the libraries, and which libraries were needed. You should download the UF2 file, then copy paste the correct .mpy into the lib folder of the circuitPython directory. I also had to remember how to do a counter, but it is much easier than I remembered. 
 
@@ -178,7 +175,7 @@ while True:
 ```
 
 ### Evidence
-![lcd_in_action](https://media.giphy.com/media/u54T48FAGXANMkITiG/giphy.gif)
+![lcd_in_action](https://github.com/vjones2906/circuitPython/blob/master/docs/ezgif.com-video-to-gif.gif)
 ### Wiring
 ![circuit_diagram_lcd](docs/lcd%20circuit%20diagram.png)
 ### Reflection
