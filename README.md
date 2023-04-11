@@ -6,7 +6,15 @@ This repository will actually serve as a aid to help you get started with your o
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_Servo](#CircuitPython_Ultrasonic)
 * [CircuitPython_LCD](#CircuitPython_LCD)
+* [Pull_Coptor](#Pull_Copter)
+* [Swing_Arm](#Swing_Arm)
+* [Multi-Part_Studio](#Multi-Part_Studio)
+* [Motor_Control](#Motor_control)
+* [Bowling_Ball_Arm](#Bowling_Ball_Arm)
+* [Rotary_Encoder](#Rotary_Encoder)
 * [NextAssignmentGoesHere](#NextAssignment)
+
+
 ---
 
 ## Hello_CircuitPython
@@ -209,7 +217,7 @@ while True:
 ### Reflection
 I learnd a lot during this project. The hardest part was getting all the libraries and setting up all the particular circuitPython LCD requirements for it to work. I used the same settup for the switch as I did fot the button, which I had to figure out by myself because there is nothing on the internet for circuitPython slideswitches. I also had to figure out how to use button on push so it didn't count more than 1 time per push.  
 
-## Pull Copter 
+## Pull_Copter 
 
 ### Description 
 This goal of this assignment was to teach us how to collaborate in a single CAD document using branches and versions. We created a pull copter with realistic physics and then 3D printed it. There were two students with different rolls, student A and student B.
@@ -219,7 +227,7 @@ This goal of this assignment was to teach us how to collaborate in a single CAD 
 This project went longer than intended because I got sick and my partner, River, had to wait for me to finish. This was challenging to figure out what parts needed to be completed in branches and what parts needed to be collaberated on. It was also hard to figure out how to do some of the geometry, but overall was just a review of last year. 
 
 
-## Swing Arm
+## Swing_Arm
 
 ### Description 
 This goal of this assignment was to use drawings, geometry, and variables to create an exact replica of a part and then be able to make different versions of it. 
@@ -229,7 +237,7 @@ This goal of this assignment was to use drawings, geometry, and variables to cre
 It was difficult getting started on this assignment beacuse I didn't know how to use onshape's geometry at first. There were a few parts of my sketch that I did the wrong way and then had to go back and fix. It taught me to sketch and dimension off of other sketches so if you change something, they all agree. It was also hard interpreting the drawings at first. I learned that cross-sections are very useful. 
 
 
-## Multi-Part Studio
+## Multi-Part_Studio
 
 ### Description 
 The goal of this assignment was to use design intent to create the parts so that something can be changed, and everything else will have the same relation to that change. All of the parts in this project were made in the same "studio". 
@@ -242,7 +250,7 @@ The goal of this assignment was to use design intent to create the parts so that
 This project was hardest in the first 2 questions. In the first one you simply had to create everything, and in the second one you saw how poorly you designed most of your sketches and extrudes. The 3rd question had a couple things go wrong, but were easy to fix and the fourth went perfectly. Doing this project really showed me how important design intent is when creating something that is meant to be changed. The more variables or "moving parts" the more precise and well planned all your work has to be. I used cross sections a lot and got some help from Dylan and Jinho.
 
 
-## Motor Control 
+## Motor_Control 
 ### Description & Code
 The goal of this assignment was to control a  motor with a potentiometer. If the potentiometer is turned up, the motor rotates faster. 
 ```python
@@ -271,7 +279,7 @@ while True:
 We already did this assignment last year and I did multiple projects which included motot control so it was easy to do again. I needed a little help with the code and then the hardest part was figuring out why the motor wouldn't work. It ended up being the order in which the analog pins were declared. The motor pin needs to come before the potentiometer pin. 
 
 
-## Bowling Ball Arm 
+## Bowling_Ball_Arm 
 
 ### Description & Code
 The purpose of this assignment was to create a specialized robot arm. The arm we created was a gravity-run mini bowling ball arm. The box was on a turn table, and then the arm itself was on an ball bearing axel. There was a servo with an arm above it that would spin and lock in the arm and then keep spinning to raise it. Then when it reached a certain angle the crank arm would slide out. After it would slide out then the arm would be free to swing down on the axel. Then a button would be pressed and the clamps would release the ball and it would fly forward hitting the targets. In total there would be 4 buttons and a potentiometer. The buttons would control the servo to lift up the arm and the release of the claw. The potentiometer would control the heading of the turntable. 
@@ -351,7 +359,7 @@ Then post an image here.   [here's a quick tutorial for all markdown code, like 
 What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
 
-## Rotary Encoder 
+## Rotary_Encoder 
 
 ### Description & Code
 The end goal for this project is to have an LCD, rotary encoder, and a neopixel all work together. When the rotary encoder would change values from 0-2 the LCD would display Stop, Caution, or Go depending on the value. Then when one of those is selected, the button on the encoder could be pushed and the neopixel would light up to the corresponding color (red-stop, green-go, yellow-caution).
