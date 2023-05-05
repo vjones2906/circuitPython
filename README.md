@@ -1,14 +1,17 @@
 # CircuitPython
 ## Table of Contents
 * [Hello_CircuitPython](#Hello_CircuitPython)
+* [CircuitPython Servo](#CircuitPython_Servo)
 * [CircuitPython_Ultrasonic](#CircuitPython_Ultrasonic)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [Pull_Coptor](#Pull_Copter)
 * [Swing_Arm](#Swing_Arm)
 * [Multi-Part_Studio](#Multi-Part_Studio)
+* [Onshape Assembly](#Onshape_Assembly)
 * [Motor_Control](#Motor_control)
 * [Bowling_Ball_Arm](#Bowling_Ball_Arm)
 * [Rotary_Encoder](#Rotary_Encoder)
+* [Certification](#Certification)
 * [NextAssignmentGoesHere](#NextAssignment)
 
 
@@ -52,6 +55,21 @@ while True:
 ### Reflection
 During this assignment, I had to figure out where to import the libraries, where to get the libraries, and which libraries were needed. You should download the UF2 file, then copy paste the correct .mpy into the lib folder of the circuitPython directory. I also had to remember how to do a counter, but it is much easier than I remembered. 
 
+
+## CircuitPython_Servo
+
+### Description & Code
+```python
+
+```
+
+### Evidence
+![___](__)
+
+### Wiring
+![___](__)
+
+### Reflection
 
 
 ## CircuitPython_Ultrasonic
@@ -217,7 +235,18 @@ The goal of this assignment was to use design intent to create the parts so that
 ### Reflection
 This project was hardest in the first 2 questions. In the first one you simply had to create everything, and in the second one you saw how poorly you designed most of your sketches and extrudes. The 3rd question had a couple things go wrong, but were easy to fix and the fourth went perfectly. Doing this project really showed me how important design intent is when creating something that is meant to be changed. The more variables or "moving parts" the more precise and well planned all your work has to be. I used cross sections a lot and got some help from Dylan and Jinho.
 
+## Onshape_Assembly
+### Description & Code
+```python
 
+```
+### Evidence
+![___](__)
+
+### Wiring
+![___](__)
+
+### Reflection
 
 ## Motor_Control 
 ### Description & Code
@@ -397,6 +426,15 @@ while True:
 ### Reflection
 The main challenge of this assingment was trying to do the C++ code in python. The whole assingment was meant for C++ so all the tips and all of the learning was not in python. I learned to use certain websites online to aid me in the learning, and I had to imporvise quite a few times. I learned about arrays and how an encoder actually works. One of the main problems I had with the code itself was which loop would go before the other. It took a lot of trying and a lot tweaking to find the exact right order. 
 
+## Certification
+
+### Description 
+The goal of this assignment was to get an Onshape Certification. We would take a 4 part test in 3 hours in order to acheive this. The first part was creating a swing arm, the second part was making a multi-part studio, the third part was creating a functioning assembly, and the final part was multiple choice. 
+### Evidence
+![___](_____)
+
+### Reflection
+This took me 2 attemps to get. A passing score was a 75, and I got a 73 on the first attempt. I figured out a problem with my multi-part studio in the last 2 minutes of the exam and didn't have enough time to fix it. I went home and practicecd the multi-part studio and assembly many times in order to get faster at it. I then took the test a second time, where the exam was almost the exact same as the first time.  
 
 
 ## NextAssignment
