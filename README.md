@@ -10,7 +10,9 @@
 * [Onshape Assembly](#Onshape_Assembly)
 * [Motor_Control](#Motor_control)
 * [Bowling_Ball_Arm](#Bowling_Ball_Arm)
+* [Temperature_LED](#Temperature_LED)
 * [Rotary_Encoder](#Rotary_Encoder)
+* [Photointerrupter](#Photointerrupter)
 * [Certification](#Certification)
 * [NextAssignmentGoesHere](#NextAssignment)
 
@@ -49,7 +51,6 @@ while True:
     sleep(.15)
     print('done with loop', count)
 ```
-
 ### Evidence
 ![neopixel_rainbow](https://media.giphy.com/media/i878kZAQd2ijZAM1FF/giphy.gif)
 ### Reflection
@@ -62,10 +63,8 @@ During this assignment, I had to figure out where to import the libraries, where
 ```python
 
 ```
-
 ### Evidence
 ![___](__)
-
 ### Wiring
 ![___](__)
 
@@ -116,14 +115,12 @@ while True:
         print("Retrying!")
     time.sleep(0.1)                                      #debounce
 ```
-
 ### Evidence
 ![servo_fade](https://media.giphy.com/media/yXlLEO7xj1HNUstS9G/giphy.gif)
 ### Wiring
 ![ciruit diagram ultrasonic](docs/ulrasonic%20circuit.png)
 ### Reflection
 The hardest part of this assignment was figuring out how to map the values from cm of distance into 0-255 LED values. It took me a while to figure out how to do the mapping, but once i did, it all came fast from there. The format for ultrasonic sensors in circuitPython was copy pasted from the circuitPython webpage.
-
 
 
 ## CircuitPython_LCD
@@ -191,14 +188,12 @@ while True:
         if slide_a.value == True:
             lcd.print('+')
 ```
-
 ### Evidence
 ![lcd_in_action](https://github.com/vjones2906/circuitPython/blob/master/docs/ezgif.com-video-to-gif.gif)
 ### Wiring
 ![circuit_diagram_lcd](docs/lcd%20circuit%20diagram.png)
 ### Reflection
 I learnd a lot during this project. The hardest part was getting all the libraries and setting up all the particular circuitPython LCD requirements for it to work. I used the same settup for the switch as I did fot the button, which I had to figure out by myself because there is nothing on the internet for circuitPython slideswitches. I also had to figure out how to use button on push so it didn't count more than 1 time per push.  
-
 
 
 ## Pull_Copter 
@@ -211,7 +206,6 @@ This goal of this assignment was to teach us how to collaborate in a single CAD 
 This project went longer than intended because I got sick and my partner, River, had to wait for me to finish. This was challenging to figure out what parts needed to be completed in branches and what parts needed to be collaberated on. It was also hard to figure out how to do some of the geometry, but overall was just a review of last year. 
 
 
-
 ## Swing_Arm
 
 ### Description 
@@ -220,7 +214,6 @@ This goal of this assignment was to use drawings, geometry, and variables to cre
 ![Swing Arm](https://user-images.githubusercontent.com/112962101/197563924-61553a7c-4b80-4dc1-924e-1fd85104f3ef.png)
 ### Reflection
 It was difficult getting started on this assignment beacuse I didn't know how to use onshape's geometry at first. There were a few parts of my sketch that I did the wrong way and then had to go back and fix. It taught me to sketch and dimension off of other sketches so if you change something, they all agree. It was also hard interpreting the drawings at first. I learned that cross-sections are very useful. 
-
 
 
 ## Multi-Part_Studio
@@ -235,20 +228,20 @@ The goal of this assignment was to use design intent to create the parts so that
 ### Reflection
 This project was hardest in the first 2 questions. In the first one you simply had to create everything, and in the second one you saw how poorly you designed most of your sketches and extrudes. The 3rd question had a couple things go wrong, but were easy to fix and the fourth went perfectly. Doing this project really showed me how important design intent is when creating something that is meant to be changed. The more variables or "moving parts" the more precise and well planned all your work has to be. I used cross sections a lot and got some help from Dylan and Jinho.
 
-## Onshape_Assembly
-### Description & Code
-```python
 
-```
+## Onshape_Assembly
+
+### Description 
+
 ### Evidence
 ![___](__)
-
 ### Wiring
 ![___](__)
-
 ### Reflection
 
+
 ## Motor_Control 
+
 ### Description & Code
 The goal of this assignment was to control a  motor with a potentiometer. If the potentiometer is turned up, the motor rotates faster. 
 ```python
@@ -347,7 +340,6 @@ while True:
         print("servo off")
         time.sleep(0.1)
 ```
-
 ### Evidence
 gif with credit
 ### Wiring
@@ -355,6 +347,22 @@ gif with credit
 ### Reflection
 What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
+
+## Temperature_LED
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+### Evidence
+gif with credit
+### Wiring
+Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
+Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+### Reflection
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
 
 ## Rotary_Encoder 
@@ -418,7 +426,6 @@ while True:
 
     last_position = position                                        #resetting the encoder "value" 
 ```
-
 ### Evidence
 ![rotary_encoder](https://media.giphy.com/media/g78CPxbHUdv7Wm6lpZ/giphy.gif)
 ### Wiring
@@ -426,13 +433,30 @@ while True:
 ### Reflection
 The main challenge of this assingment was trying to do the C++ code in python. The whole assingment was meant for C++ so all the tips and all of the learning was not in python. I learned to use certain websites online to aid me in the learning, and I had to imporvise quite a few times. I learned about arrays and how an encoder actually works. One of the main problems I had with the code itself was which loop would go before the other. It took a lot of trying and a lot tweaking to find the exact right order. 
 
+
+## Photointerrupter
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+### Evidence
+gif with credit
+### Wiring
+Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
+Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+### Reflection
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+
+
 ## Certification
 
 ### Description 
 The goal of this assignment was to get an Onshape Certification. We would take a 4 part test in 3 hours in order to acheive this. The first part was creating a swing arm, the second part was making a multi-part studio, the third part was creating a functioning assembly, and the final part was multiple choice. 
 ### Evidence
 ![___](_____)
-
 ### Reflection
 This took me 2 attemps to get. A passing score was a 75, and I got a 73 on the first attempt. I figured out a problem with my multi-part studio in the last 2 minutes of the exam and didn't have enough time to fix it. I went home and practicecd the multi-part studio and assembly many times in order to get faster at it. I then took the test a second time, where the exam was almost the exact same as the first time.  
 
