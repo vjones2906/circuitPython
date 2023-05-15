@@ -202,6 +202,7 @@ I learnd a lot during this project. The hardest part was getting all the librari
 This goal of this assignment was to teach us how to collaborate in a single CAD document using branches and versions. We created a pull copter with realistic physics and then 3D printed it. There were two students with different rolls, student A and student B.
 ### Evidence
 ![pull copter](https://user-images.githubusercontent.com/112962101/197562548-5c4571a7-1cc3-4c0e-9814-c7d1b1db0804.png)
+link: https://cvilleschools.onshape.com/documents/28913ae2144b614eeb24c495/w/07076b2bb0e8b82fca19e7b7/e/f1940db3c9019138372953fc
 ### Reflection
 This project went longer than intended because I got sick and my partner, River, had to wait for me to finish. This was challenging to figure out what parts needed to be completed in branches and what parts needed to be collaberated on. It was also hard to figure out how to do some of the geometry, but overall was just a review of last year. 
 
@@ -212,6 +213,7 @@ This project went longer than intended because I got sick and my partner, River,
 This goal of this assignment was to use drawings, geometry, and variables to create an exact replica of a part and then be able to make different versions of it. 
 ### Evidence
 ![Swing Arm](https://user-images.githubusercontent.com/112962101/197563924-61553a7c-4b80-4dc1-924e-1fd85104f3ef.png)
+link: https://cvilleschools.onshape.com/documents/73ad9d41ee7d879dcb33ed27/w/569388fec521f1599875ce0a/e/f1f88169fac4697a44e93ff0
 ### Reflection
 It was difficult getting started on this assignment beacuse I didn't know how to use onshape's geometry at first. There were a few parts of my sketch that I did the wrong way and then had to go back and fix. It taught me to sketch and dimension off of other sketches so if you change something, they all agree. It was also hard interpreting the drawings at first. I learned that cross-sections are very useful. 
 
@@ -225,6 +227,7 @@ The goal of this assignment was to use design intent to create the parts so that
 ![Question 2](https://user-images.githubusercontent.com/112962101/197566233-ca3269b0-2589-4f52-8b08-cb4786a4b6e6.png)
 ![Question 3](https://user-images.githubusercontent.com/112962101/197566238-da6182d3-b9af-4e5e-90a2-0195e896c2cd.png)
 ![Question 4](https://user-images.githubusercontent.com/112962101/197566291-0f656ed5-cf45-4a5c-b412-bbc959fef8f6.png)
+link: https://cvilleschools.onshape.com/documents/ec01c6bd7bee84627b463f60/w/1764f5923d829c1db0ec3661/e/9ce24ba94ecc458e08fa5093
 ### Reflection
 This project was hardest in the first 2 questions. In the first one you simply had to create everything, and in the second one you saw how poorly you designed most of your sketches and extrudes. The 3rd question had a couple things go wrong, but were easy to fix and the fourth went perfectly. Doing this project really showed me how important design intent is when creating something that is meant to be changed. The more variables or "moving parts" the more precise and well planned all your work has to be. I used cross sections a lot and got some help from Dylan and Jinho.
 
