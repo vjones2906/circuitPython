@@ -10,7 +10,7 @@
 * [Onshape Assembly](#Onshape_Assembly)
 * [Motor_Control](#Motor_control)
 * [Bowling_Ball_Arm](#Bowling_Ball_Arm)
-* [Temperature_LED](#Temperature_LED)
+* [Temperature_LCD](#Temperature_LCD)
 * [Rotary_Encoder](#Rotary_Encoder)
 * [Photointerrupter](#Photointerrupter)
 * [Certification](#Certification)
