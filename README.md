@@ -381,21 +381,53 @@ gif with credit
 What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
 
 
-## Temperature_LED
+## Temperature_LCD
 
 ### Description & Code
-
+The goal of this assignment is to read the temperature in the room, print it on an LCD, and then display whether or not the temperature is in a desired range.
 ```python
-Code goes here
+#thanks to Afton for some key parts of this code
+import board                                    
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface                       #importing libs
+from analogio import AnalogIn
+from lcd.lcd import CursorMode                             
+from time import sleep
+from simpleio import map_range
+import digitalio
 
+i2c = board.I2C()
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)              #defining the LCD
+
+raw = AnalogIn(board.A2)                                                        #Analog input for sensor
+
+temp = 0        
+tchange = 0                                                                     #defining values
+
+temp_says = ["brrr Too Cold!", "feels great :)", "Too Hot!"]                    #making the array
+
+
+while True:
+    temp = round((raw.value-500)/ 576,1)                                        #temp = map_range(raw.value, 0, 100, 0, 100)
+    if tchange != temp:
+        lcd.clear()
+        lcd.print("T: " + str(temp) +"C  " + str(round((temp * 1.8) + 32,1)) + "F ")  #printing temp in celcius and fahrenheit  
+        if temp > 23:                                                           #giving values and telling the lcd what to print
+            lcd.print(temp_says[2])
+        elif temp < 20:
+            lcd.print(temp_says[0])
+        else:
+            lcd.print(temp_says[1])
+        tChange = temp                                                          #resetting values
+        print(temp)
+    sleep(1) 
 ```
 ### Evidence
-gif with credit
+![temp_gif](docs/ezgif.com-video-to-gif%20(2).gif)
 ### Wiring
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+![temp_wiring](docs/tempwire.png)
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+This assignment was difficult to figure out at first. When I was looking online for some example code I ended up finding a wrong version and basing my whole V1 off of it. It had many extra value conversions that were meant to read the input correctly. All the Metro needs to read the values correctly is AnalogIn(board.pin) which saves a lot of code, but it lost me a lot of time. I ended up having afton help me out with the finer details of the code. I learned how to use an array so I could print the things I wanted to say on the LCD easier. 
 
 
 ## Rotary_Encoder 
