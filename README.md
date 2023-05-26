@@ -265,13 +265,11 @@ This project was hardest in the first 2 questions. In the first one you simply h
 ## Onshape_Assembly
 
 ### Description 
-
+The goal of this assignment was to practice assembling parts in onshape to prepare us for the exam. 
 ### Evidence
-![___](__)
-### Wiring
-![___](__)
+![Assemley_assembled](docs/assemblypic.png)
 ### Reflection
-
+This assignment was not too hard, but I did cut a few corners that impacted me later. I didn't order some of the revolute mates correctly, so it moved in an incorrect fasion which made getting the values a bit harder. 
 
 ## Motor_Control 
 
