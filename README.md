@@ -60,16 +60,43 @@ During this assignment, I had to figure out where to import the libraries, where
 ## CircuitPython_Servo
 
 ### Description & Code
+The goal of this assignment was to move a 180 servo by pushing buttons. One of the buttons would move it clockwise and the other counter-clockwise. If the buttons were not being pressed the servo should not move.
 ```python
+#thanks to afton for code guidelines 
+import board                                                           #importing libraries
+from time import sleep
+import pwmio
+from adafruit_motor import servo
+from digitalio import DigitalInOut, Direction
+angle = 90
 
+
+pwm = pwmio.PWMOut(board.A1, duty_cycle=2 ** 15, frequency=50)         #connecting to servo
+
+                                                                
+my_servo = servo.Servo(pwm)                                            #Create a servo object
+ 
+button = DigitalInOut(board.D1)                                        #telling what pins to input from the buttons
+button.direction = Direction.INPUT
+button2 = DigitalInOut(board.D2)
+button2.direction = Direction.INPUT
+
+
+while True:
+    if button.value and angle < 180:                                  #telling the servo to move by 5 if the button is pressed
+        angle += 5
+    if button2.value and angle > 0:
+        angle -=5
+    print(angle)
+    my_servo.angle = angle
+    sleep(0.01)  
 ```
 ### Evidence
-![___](__)
+![servo_gif](docs/ezgif.com-video-to-gif%20(1).gif)
 ### Wiring
-![___](__)
-
+![servo_wiring](docs/servowire.png)
 ### Reflection
-
+This assignment was very frustrating. I spent almost 2 class periods on it when I finally realized the servo I picked up from the 180 servo bin was actually a continuous servo. The code I had been working on and the wiring was right, I just had the wrong servo. I learned how to use inputs and outputs while doing this assignment. 
 
 ## CircuitPython_Ultrasonic
 
