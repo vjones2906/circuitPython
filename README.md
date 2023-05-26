@@ -268,6 +268,8 @@ This project was hardest in the first 2 questions. In the first one you simply h
 The goal of this assignment was to practice assembling parts in onshape to prepare us for the exam. 
 ### Evidence
 ![Assemley_assembled](docs/assemblypic.png)
+
+link: https://cvilleschools.onshape.com/documents/7ce903cc5915923b359f506c/w/e7e3524a56c729e04c37baed/e/c8543076275e207bb2c0158b
 ### Reflection
 This assignment was not too hard, but I did cut a few corners that impacted me later. I didn't order some of the revolute mates correctly, so it moved in an incorrect fasion which made getting the values a bit harder. 
 
