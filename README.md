@@ -464,7 +464,7 @@ The goal of this assignment was to get an Onshape Certification. We would take a
 ### Evidence
 ![onshapecertified](https://github.com/vjones2906/circuitPython/blob/master/docs/onshapecertified.png)
 ### Reflection
-This took me 2 attemps to get. A passing score was a 75, and I got a 73 on the first attempt. I figured out a problem with my multi-part studio in the last 2 minutes of the exam and didn't have enough time to fix it. I went home and practicecd the multi-part studio and assembly many times in order to get faster at it. I then took the test a second time, where the exam was almost the exact same as the first time.  
+This took me 2 attemps to get. A passing score was a 75, and I got a 73 on the first attempt. I figured out a problem with my multi-part studio in the last 2 minutes of the exam and didn't have enough time to fix it. I went home and practicecd the multi-part studio and assembly many times in order to get faster at it. I then took the test a second time, where the exam was almost the exact same as the first time. I learned to be very thorough when looking at the drawing. I should have been more careful and looked at every surface the first time going around so I could correctly fabricate it.
 
 
 ## NextAssignment
