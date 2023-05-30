@@ -14,7 +14,6 @@
 * [Rotary_Encoder](#Rotary_Encoder)
 * [Photointerrupter](#Photointerrupter)
 * [Certification](#Certification)
-* [NextAssignmentGoesHere](#NextAssignment)
 
 
 ---
@@ -553,22 +552,3 @@ The goal of this assignment was to get an Onshape Certification. We would take a
 ![onshapecertified](https://github.com/vjones2906/circuitPython/blob/master/docs/onshapecertified.png)
 ### Reflection
 This took me 2 attemps to get. A passing score was a 75, and I got a 73 on the first attempt. I figured out a problem with my multi-part studio in the last 2 minutes of the exam and didn't have enough time to fix it. I went home and practicecd the multi-part studio and assembly many times in order to get faster at it. I then took the test a second time, where the exam was almost the exact same as the first time. I learned to be very thorough when looking at the drawing. I should have been more careful and looked at every surface the first time going around so I could correctly fabricate it.
-
-
-## NextAssignment
-
-### Description & Code
-
-```python
-Code goes here
-
-```
-
-### Evidence
-gif with credit
-### Wiring
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
-### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
-
