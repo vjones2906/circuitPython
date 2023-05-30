@@ -377,11 +377,13 @@ Prototype:
 
 ![prototype_pic](/docs/IMG-5075.jpg)
 
+
 Circuit with all the servos running:
 
 ![big_servo_1](/docs/ezgif.com-video-to-gif%20(5).gif)
 ![big_servo_2](/docs/ezgif.com-video-to-gif%20(6).gif)
 ![small_servo](/docs/ezgif.com-video-to-gif%20(7).gif)
+
 
 Assembled CAD (as is):
 
