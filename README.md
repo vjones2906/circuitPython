@@ -373,22 +373,23 @@ while True:
         time.sleep(0.1)
 ```
 ### Evidence
-Prototype:
+#### Prototype:
 
 ![prototype_pic](/docs/IMG-5075.jpg)
 
 
-Circuit with all the servos running:
+#### Circuit with all the servos running:
+
+##### crank/release servo
 
 ![big_servo_1](/docs/ezgif.com-video-to-gif%20(5).gif)
-crank/release servo
+##### turntable servo
 ![big_servo_2](/docs/ezgif.com-video-to-gif%20(6).gif)
-turntable servo
+##### gripper servo
 ![small_servo](/docs/ezgif.com-video-to-gif%20(7).gif)
-gripper servo
 
 
-Assembled CAD (as is):
+####Assembled CAD (as is):
 
 ![CAD](/docs/cadarm.png)
 ### Wiring
