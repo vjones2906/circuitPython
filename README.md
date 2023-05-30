@@ -379,12 +379,12 @@ while True:
 
 ### Circuit with all the servos running:
 
-#### Crank/release servo
+#### Crank/release servo:
 
 ![big_servo_1](/docs/ezgif.com-video-to-gif%20(5).gif)
-#### Turntable servo
+#### Turntable servo:
 ![big_servo_2](/docs/ezgif.com-video-to-gif%20(6).gif)
-#### Gripper servo
+#### Gripper servo:
 ![small_servo](/docs/ezgif.com-video-to-gif%20(7).gif)
 
 
