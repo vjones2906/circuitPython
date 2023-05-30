@@ -381,8 +381,11 @@ Prototype:
 Circuit with all the servos running:
 
 ![big_servo_1](/docs/ezgif.com-video-to-gif%20(5).gif)
+crank/release servo
 ![big_servo_2](/docs/ezgif.com-video-to-gif%20(6).gif)
+turntable servo
 ![small_servo](/docs/ezgif.com-video-to-gif%20(7).gif)
+gripper servo
 
 
 Assembled CAD (as is):
@@ -391,7 +394,7 @@ Assembled CAD (as is):
 ### Wiring
 ![robotarm](https://github.com/vjones2906/circuitPython/blob/master/docs/robotarm_wiring.png)
 ### Reflection
-This project was a challenge for my group. We didn't end up finishing everything and didn't even laser cut the CAD model. The plan was to split the CAD and code between the group members so that Vinnie did all the code and did the circuit while Will did all the CAD. Vinnie ended up finishing the code early and jonied will in trying to finish the CAD.  
+This project was a challenge for my group. We didn't end up finishing everything and didn't even laser cut the CAD model. The plan was to split the CAD and code between the group members so that Vinnie did all the code and did the circuit while Will did all the CAD. Vinnie ended up finishing the code early and jonied will in trying to finish the CAD. Beacause of how the dimensions were done in CAD before Vinnie came, he had to define and redo most of the dimensions. This slowed down the proccess significantly. The group spent time making CAD parts before thinking them through to completion, which only made more work for them later.  
 
 
 ## Temperature_LCD
