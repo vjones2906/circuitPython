@@ -502,18 +502,47 @@ The main challenge of this assingment was trying to do the C++ code in python. T
 ## Photointerrupter
 
 ### Description & Code
-
+The goal of this assignment was to show how many times the photointurrupter was inturrupted in 4 second intervals. 
 ```python
-Code goes here
+#thanks to afton for some key parts to the code 
+import board                                                                    #importing libs
+from time import monotonic, sleep
+from digitalio import DigitalInOut, Pull, Direction
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
 
+i2c = board.I2C()
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)              #defining the LCD
+
+now = monotonic()                                                               #Time in seconds since power on
+
+photo = DigitalInOut(board.D8)              
+photo.direction = Direction.INPUT
+photo.pull = Pull.UP                                                            #defining photointurrupter
+
+count = 0
+count2 = 0
+timeStart = 0                                                                   #defining vars
+
+while True:
+    if photo.value:
+        count += 1
+        while photo.value:
+            pass                                                                
+    if (float(timeStart + 4) < monotonic()):                                    #setting the 4 second loop
+        print("Interrupts: " + str(count))
+        lcd.clear()
+        lcd.print("In Interval " + str(count2) + ":  Detected " + str(count) + " Times") #printing on LCD
+        count2 += 1
+        count = 0                                                               #changing counts
+        timeStart = monotonic()
 ```
 ### Evidence
-gif with credit
+![photointurrupter_gif](/docs/ezgif.com-video-to-gif%20(4).gif)   
 ### Wiring
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+![Photointurrupter_wiring](/docs/photowiring.png)
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+This assingment was challenging to figure out the monotonic time parts and how to orient the loops. Afton helped me out with some of the code to give me a general idea of where I should be headed. I had a couple issues with my lcd library that took some time to fix and then some issues with the display itself. I learned a lot from this assignment and will probably use the monotonic time and the knowledege of loop nesting in the future. 
 
 
 ## Certification
