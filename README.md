@@ -373,11 +373,15 @@ while True:
         time.sleep(0.1)
 ```
 ### Evidence
-gif with credit
+![prototype_pic](/docs/IMG-5075.jpg)
+![big_servo_1](/docs/ezgif.com-video-to-gif%20(5).gif)
+![big_servo_2](/docs/ezgif.com-video-to-gif%20(6).gif)
+![small_servo](/docs/ezgif.com-video-to-gif%20(7).gif)
+![CAD](/docs/cadarm.png)
 ### Wiring
 ![robotarm](https://github.com/vjones2906/circuitPython/blob/master/docs/robotarm_wiring.png)
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+This project was a challenge for my group. We didn't end up finishing everything and didn't even laser cut the CAD model. The plan was to split the CAD and code between the group members so that Vinnie did all the code and did the circuit while Will did all the CAD. Vinnie ended up finishing the code early and jonied will in trying to finish the CAD.  
 
 
 ## Temperature_LCD
