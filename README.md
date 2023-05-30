@@ -372,24 +372,23 @@ while True:
         print("servo off")
         time.sleep(0.1)
 ```
-### Evidence
-#### Prototype:
+### Prototype:
 
 ![prototype_pic](/docs/IMG-5075.jpg)
 
 
-#### Circuit with all the servos running:
+### Circuit with all the servos running:
 
-##### crank/release servo
+#### Crank/release servo
 
 ![big_servo_1](/docs/ezgif.com-video-to-gif%20(5).gif)
-##### turntable servo
+#### Turntable servo
 ![big_servo_2](/docs/ezgif.com-video-to-gif%20(6).gif)
-##### gripper servo
+#### Gripper servo
 ![small_servo](/docs/ezgif.com-video-to-gif%20(7).gif)
 
 
-####Assembled CAD (as is):
+### Assembled CAD (as is):
 
 ![CAD](/docs/cadarm.png)
 ### Wiring
