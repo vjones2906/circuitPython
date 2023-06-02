@@ -95,7 +95,7 @@ while True:
 ### Wiring
 ![servo_wiring](docs/servowire.png)
 ### Reflection
-This assignment was very frustrating. I spent almost 2 class periods on it when I finally realized the servo I picked up from the 180 servo bin was actually a continuous servo. The code I had been working on and the wiring was right, I just had the wrong servo. I learned how to use inputs and outputs while doing this assignment. 
+This assignment was very frustrating. I spent almost 2 class periods on it when I finally realized the servo I picked up from the 180 servo bin was actually a continuous servo. The code I had been working on and the wiring was right, I just had the wrong servo. I learned how to use inputs and outputs while doing this assignment. Link to Afton's Github: https://github.com/Avanhoo/CircuitPython 
 
 ## CircuitPython_Ultrasonic
 
@@ -298,7 +298,7 @@ while True:
 ### Wiring
 ![motorcontrol](https://github.com/vjones2906/circuitPython/blob/master/docs/motorcontrol.png)
 ### Reflection
-We already did this assignment last year and I did multiple projects which included motot control so it was easy to do again. I needed a little help with the code and then the hardest part was figuring out why the motor wouldn't work. It ended up being the order in which the analog pins were declared. The motor pin needs to come before the potentiometer pin. 
+We already did this assignment last year and I did multiple projects which included motot control so it was easy to do again. I needed a little help with the code and then the hardest part was figuring out why the motor wouldn't work. It ended up being the order in which the analog pins were declared. The motor pin needs to come before the potentiometer pin. If I were to do this again I would use the "in-between" feature in order to mate more accurately. I would be more careful of the order in which I mate certain things because  mating them incorrectly makes finding the quesiton values harder.
 
 
 
