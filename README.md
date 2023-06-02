@@ -445,7 +445,7 @@ while True:
 ### Wiring
 ![temp_wiring](docs/tempwire.png)
 ### Reflection
-This assignment was difficult to figure out at first. When I was looking online for some example code I ended up finding a wrong version and basing my whole V1 off of it. It had many extra value conversions that were meant to read the input correctly. All the Metro needs to read the values correctly is AnalogIn(board.pin) which saves a lot of code, but it lost me a lot of time. I ended up having afton help me out with the finer details of the code. I learned how to use an array so I could print the things I wanted to say on the LCD easier. 
+This assignment was difficult to figure out at first. Make sure to find compatable code if you look online becasuse when I was looking for some example code I ended up finding a wrong version and basing my whole V1 off of it. It had many extra value conversions that were meant to read the input correctly. Make sure you know that all the Metro needs to read the values correctly is AnalogIn(board.pin) which saves a lot of code and time. I ended up having afton help me out with the finer details of the code. I figuresd out that you can use an array to print the things you want to say on the LCD easier. Make sure to adjust the contrast using the little screw on the back of the LCD backpack if you want to see the screen! Link to Afton's Github: https://github.com/Avanhoo/CircuitPython  
 
 
 ## Rotary_Encoder 
@@ -514,7 +514,7 @@ while True:
 ### Wiring
 ![encoderwiring](https://github.com/vjones2906/circuitPython/blob/master/docs/encoderwiring.png) 
 ### Reflection
-The main challenge of this assingment was trying to do the C++ code in python. The whole assingment was meant for C++ so all the tips and all of the learning was not in python. I learned to use certain websites online to aid me in the learning, and I had to imporvise quite a few times. I learned about arrays and how an encoder actually works. One of the main problems I had with the code itself was which loop would go before the other. It took a lot of trying and a lot tweaking to find the exact right order. 
+The main challenge of this assingment was trying to do the C++ code in python. The whole assingment was meant for C++ so all the tips and all of the learning was not in python. There are plenty of websites online which provide code for a rotary enoder in python, an example of which is https://learn.adafruit.com/rotary-encoder/circuitpython. I learned about arrays and how an encoder actually works. One of the main problems I had with the code itself was which loop would go before the other. It took a lot of trying and a lot tweaking to find the exact right order. In order to find the right order, I found it helpful to think about the loops as a family and then draw out a family tree and then match which loops goes to which person. If you draw it out like this is helps your brain realize what loop HAS to exist for another to function.  
 
 
 ## Photointerrupter
@@ -560,7 +560,7 @@ while True:
 ### Wiring
 ![Photointurrupter_wiring](/docs/photowiring.png)
 ### Reflection
-This assingment was challenging to figure out the monotonic time parts and how to orient the loops. Afton helped me out with some of the code to give me a general idea of where I should be headed. I had a couple issues with my lcd library that took some time to fix and then some issues with the display itself. I learned a lot from this assignment and will probably use the monotonic time and the knowledege of loop nesting in the future. 
+This challenges of this assignment were to figure out how monotonic time works and how to best orient the loops. Afton helped me out with some of the code to give me a general idea of where I should be headed. I had a couple issues with my lcd library that took some time to fix and then some issues with the display itself. If you are having trouble with your libraries I found it easiest to delete the existing library from your folder (if it is there) and then copy the .mpy file straight from the circuitpython bundle back to the lib folder. I learned a lot from this assignment and will probably use the monotonic time and the knowledege of loop nesting in the future. Link to Afton's Github: https://github.com/Avanhoo/CircuitPython 
 
 
 ## Certification
@@ -570,4 +570,4 @@ The goal of this assignment was to get an Onshape Certification. We would take a
 ### Evidence
 ![onshapecertified](https://github.com/vjones2906/circuitPython/blob/master/docs/onshapecertified.png)
 ### Reflection
-This took me 2 attemps to get. A passing score was a 75, and I got a 73 on the first attempt. I figured out a problem with my multi-part studio in the last 2 minutes of the exam and didn't have enough time to fix it. I went home and practicecd the multi-part studio and assembly many times in order to get faster at it. I then took the test a second time, where the exam was almost the exact same as the first time. I learned to be very thorough when looking at the drawing. I should have been more careful and looked at every surface the first time going around so I could correctly fabricate it.
+This took me 2 attemps to get. A passing score was a 75, and I got a 73 on the first attempt. I figured out a problem with my multi-part studio in the last 2 minutes of the exam and didn't have enough time to fix it. If you want to get faster at something you need to practice it, and that's what I did. I re-did the multi-part studio and assembly many times and each time I got faster. Some helpful shortcuts I figured out was if you type "e" it will set two values equal to eachother. I also learned that you can use the middle click of your mouse to move around in onshape without spinning your view. When I took the test a second time, where the exam was almost the exact same as the first time. When you take this type of test you should be very careful and look for all small details in the drawings before attempting to re-create them. I ended up passing the second time around and getting my onshape certificate. 
